@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "PrepEase",
+    "slug": "ReactNativeProject",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/PrepaseLogo.jpg",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/PrepaseLogo.jpg",
+        "backgroundColor": "#735DA5"
+      },
+      "package": "com.akshayjha.ReactNativeProject"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/PrepaseLogo.jpg"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/PrepaseLogo.jpg",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#735DA5"
+        }
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow PrepEase to access your microphone."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c1b46918-2216-4186-9247-cfd0189acba5"
+      }
+    }
+  }
+}
